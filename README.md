@@ -32,9 +32,14 @@ var
             ext: 'sql'
         }
     },
-    template = SQLTemplate.forge(options);
+    template = SQLTemplate.forge(options),
 
-console.log(template.render('example-1', [ 1 ])); // SELECT 1
+    // escape values are optional
+    // see https://github.com/felixge/node-mysql#escaping-query-values
+    // see https://github.com/felixge/node-mysql#escaping-query-identifiers
+    escape = [ 1 ];
+
+console.log(template.render('example-1', escape)); // SELECT 1
 ```
 
 ### Query execution w/ callback
