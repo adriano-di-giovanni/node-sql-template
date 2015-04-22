@@ -18,5 +18,20 @@
   "dependencies": {
     "underscore": "^1.8.3",
     "mysql": "^2.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adriano-di-giovanni/node-sql-template.git"
+  },
+  "keywords": [
+    "sql",
+    "mysql",
+    "template",
+    "engine",
+    "query"
+  ],
+  "bugs": {
+    "url": "https://github.com/adriano-di-giovanni/node-sql-template/issues"
+  },
+  "homepage": "https://github.com/adriano-di-giovanni/node-sql-template"
 }
