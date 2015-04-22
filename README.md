@@ -23,6 +23,9 @@ SELECT ?
 ```javascript
 
 var
+    path = require('path');
+
+var
     SQLTemplate = require('node-sql-template');
 
 var
@@ -53,6 +56,9 @@ SELECT * FROM `player` WHERE `name` LIKE ?
 `/index.js`
 
 ```javascript
+
+var
+    path = require('path');
 
 var
     SQLTemplate = require('node-sql-template');
@@ -89,6 +95,9 @@ SELECT * FROM `player` WHERE `name` LIKE ?
 `/index.js`
 
 ```javascript
+
+var
+    path = require('path');
 
 var
     SQLTemplate = require('node-sql-template');
