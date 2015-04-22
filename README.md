@@ -74,7 +74,8 @@ var
         connection: {
             host: 'localhost',
             user: 'root',
-            password: 'root'
+            password: 'root',
+            multipleStatements: true
         }
     },
     template = SQLTemplate.forge(options);
@@ -113,7 +114,8 @@ var
         connection: {
             host: 'localhost',
             user: 'root',
-            password: 'root'
+            password: 'root',
+            multipleStatements: true
         }
     },
     template = SQLTemplate.forge(options),
