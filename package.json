@@ -1,0 +1,22 @@
+{
+  "name": "node-sql-template",
+  "version": "0.1.0",
+  "description": "A simple SQL template engine and query runner for Node.js",
+  "main": "lib/SQLTemplate.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec test"
+  },
+  "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
+  "dependencies": {
+    "underscore": "^1.8.3",
+    "mysql": "^2.6.2"
+  }
+}
