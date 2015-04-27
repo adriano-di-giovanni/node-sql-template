@@ -1,6 +1,6 @@
 {
   "name": "node-sql-template",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A simple SQL template engine and query runner for Node.js",
   "main": "lib/SQLTemplate.js",
   "directories": {
@@ -16,8 +16,9 @@
     "mocha": "*"
   },
   "dependencies": {
-    "underscore": "^1.8.3",
-    "mysql": "^2.6.2"
+    "mysql": "^2.6.2",
+    "readable-stream": "^1.0.33",
+    "underscore": "^1.8.3"
   },
   "repository": {
     "type": "git",
