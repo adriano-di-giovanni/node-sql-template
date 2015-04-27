@@ -1,13 +1,13 @@
 {
   "name": "node-sql-template",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A simple SQL template engine and query runner for Node.js",
   "main": "lib/SQLTemplate.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --reporter spec test"
+    "test": "mocha --reporter spec --timeout 30s test"
   },
   "author": "Adriano Di Giovanni <me@adrianodigiovanni.com> (http://adrianodigiovanni.com/)",
   "license": "MIT",

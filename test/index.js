@@ -71,7 +71,7 @@ describe('Unit tests', function () {
     it('#run w/o callback', function (done) {
 
       var
-        Readable = require('stream').Readable;
+        Readable = require('readable-stream');
 
       var
         stream = template.run('2', [ 1 ]);
@@ -79,6 +79,9 @@ describe('Unit tests', function () {
       expect(stream).to.be.an.instanceOf(Readable);
 
       stream
+        .on('result', function (row) {
+          console.log('result', row);
+        })
         .on('end', function () {
           done();
         });
@@ -87,7 +90,7 @@ describe('Unit tests', function () {
     it('#run w/ callback', function (done) {
 
       template.run('2', [ 1 ], function (error, rows) {
-        expect(error).to.be.null;
+        expect(error).to.be.null();
         expect(rows).to.be.instanceOf(Array);
         done();
       });
