@@ -16,6 +16,8 @@
         // stylistic issues
         "no-underscore-dangle": true,
         "quotes": [ 2, "single" ],
-        "spaced-line-comment": [ 2, "always" ]
+        "spaced-line-comment": [ 2, "always" ],
+        "space-unary-ops": 0,
+        "space-infix-ops": 0
     }
 }

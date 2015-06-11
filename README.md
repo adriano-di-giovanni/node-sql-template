@@ -5,7 +5,7 @@ SQLTemplate is a simple SQL template engine and query runner for Node.js.
 ## Installation
 
 ```
-npm install node-sql-template --save
+npm install node-sql-template mysql --save
 ```
 
 ## Usage
@@ -136,3 +136,9 @@ stream
 
     });
 ```
+
+## Change Log
+
+### 0.2.0
+
+you now need to also `npm install` mysql package

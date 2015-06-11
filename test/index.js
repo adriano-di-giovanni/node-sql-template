@@ -1,7 +1,5 @@
-/* global describe */
-/* global before */
-/* global it */
-/* global expect */
+/* eslint-env mocha */
+/* eslint no-unused-expressions: 0 */
 
 'use strict';
 
@@ -9,9 +7,7 @@ var
   path = require('path');
 
 var
-  chai = require('chai');
-
-global.expect = chai.expect;
+  expect = require('chai').expect;
 
 var
   SQLTemplate = require('../lib/SQLTemplate');
@@ -45,7 +41,7 @@ describe('Unit tests', function () {
 
     it('#run w/ callback', function (done) {
 
-      template.run('1', [ 1 ], function (error, rows) {
+      template.run('1', [ 1 ], function (error/*, rows*/) {
         expect(error).to.be.an.instanceOf(Error);
         done();
       });
@@ -79,9 +75,9 @@ describe('Unit tests', function () {
       expect(stream).to.be.an.instanceOf(Readable);
 
       stream
-        .on('result', function (row) {
-          console.log('result', row);
-        })
+        // .on('result', function (row) {
+        //   console.log('result', row);
+        // })
         .on('end', function () {
           done();
         });
@@ -90,7 +86,7 @@ describe('Unit tests', function () {
     it('#run w/ callback', function (done) {
 
       template.run('2', [ 1 ], function (error, rows) {
-        expect(error).to.be.null();
+        expect(error).to.be.null;
         expect(rows).to.be.instanceOf(Array);
         done();
       });
@@ -99,7 +95,8 @@ describe('Unit tests', function () {
     it('#run w/ callback w/o escape', function (done) {
 
       template.run('2', function (error, rows) {
-        expect(error).to.be.instanceOf(Error);
+        expect(error).to.be.null;
+        expect(rows).to.be.instanceof(Array);
         done();
       });
     });
