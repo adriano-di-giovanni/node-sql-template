@@ -76,7 +76,9 @@ var
             user: 'root',
             password: 'root',
             multipleStatements: true
-        }
+        },
+
+        isDebug: true // sql will be output to the console upon #run()
     },
     template = SQLTemplate.forge(options);
 
@@ -116,7 +118,9 @@ var
             user: 'root',
             password: 'root',
             multipleStatements: true
-        }
+        },
+
+        isDebug: true // sql will be output to the console upon #run()
     },
     template = SQLTemplate.forge(options),
 
@@ -138,6 +142,10 @@ stream
 ```
 
 ## Change Log
+
+### 0.2.1
+
+Add `isDebug` option to output sql upon `#run()`.
 
 ### 0.2.0
 
