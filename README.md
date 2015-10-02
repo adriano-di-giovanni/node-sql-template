@@ -143,6 +143,14 @@ stream
 
 ## Change Log
 
+### 0.2.3
+
+Fix package definition
+
+### 0.2.2
+
+Add `#end()` method to release connection pool.
+
 ### 0.2.1
 
 Add `isDebug` option to output sql upon `#run()`.
