@@ -25,7 +25,8 @@ describe('Unit tests', function () {
           template: {
             dir: path.resolve(__dirname, './sql'),
             ext: 'sql'
-          }
+          },
+          isDebug: true
         };
 
       template = SQLTemplate.forge(options);
@@ -58,7 +59,8 @@ describe('Unit tests', function () {
             dir: path.resolve(__dirname, './sql'),
             ext: 'sql'
           },
-          connection: require('./connection.json')
+          connection: require('./connection.json'),
+          isDebug: true
         };
 
       template = SQLTemplate.forge(options);
